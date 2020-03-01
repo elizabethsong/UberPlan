@@ -454,7 +454,7 @@
                                         </constraints>
                                         <state key="normal" title=" "/>
                                         <connections>
-                                            <segue destination="wS1-vk-Mo7" kind="presentation" id="hB2-p1-h19"/>
+                                            <segue destination="u6S-qL-A1C" kind="presentation" id="tz8-Qi-cU6"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -501,7 +501,7 @@
             <objects>
                 <tableViewController id="wS1-vk-Mo7" customClass="TableTableViewController" customModule="UberTest" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Ehx-Vk-OQa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" id="8dv-fG-qwl">
@@ -555,56 +555,56 @@
             <objects>
                 <viewController id="u6S-qL-A1C" customClass="GroupViewController" customModule="UberTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lkg-Kx-V79">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2020-03-01 at 4.22.06 AM" translatesAutoresizingMaskIntoConstraints="NO" id="InX-pw-mrg">
-                                <rect key="frame" x="0.0" y="64" width="414" height="153"/>
-                            </imageView>
-                            <searchBar contentMode="redraw" placeholder="Add phone number" translatesAutoresizingMaskIntoConstraints="NO" id="lZ1-eJ-5D4">
-                                <rect key="frame" x="0.0" y="217" width="414" height="56"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </searchBar>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2020-02-29 at 9.06.23 PM" translatesAutoresizingMaskIntoConstraints="NO" id="B4C-OC-6Y9">
-                                <rect key="frame" x="0.0" y="780" width="414" height="116"/>
+                                <rect key="frame" x="0.0" y="726" width="414" height="116"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="414" id="2rP-SX-6jn"/>
                                     <constraint firstAttribute="height" constant="116" id="EDJ-uC-tit"/>
                                 </constraints>
                             </imageView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="fYx-Fx-WAi">
-                                <rect key="frame" x="0.0" y="273" width="414" height="445"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                            </tableView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2020-03-01 at 6.57.40 AM" translatesAutoresizingMaskIntoConstraints="NO" id="s7O-Zn-fnC">
+                                <rect key="frame" x="-15" y="50" width="444" height="712"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="444" id="S4Z-Mt-Ccr"/>
+                                    <constraint firstAttribute="height" constant="712" id="oCf-0h-UjA"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wgu-yB-e2F">
+                                <rect key="frame" x="45" y="671" width="324" height="91"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="324" id="en6-M4-sOw"/>
+                                    <constraint firstAttribute="height" constant="91" id="fq4-Qg-v5o"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <state key="normal" title="  "/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" id="lX4-Zp-bhV"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="lZ1-eJ-5D4" firstAttribute="centerX" secondItem="kA9-Jm-6mg" secondAttribute="centerX" id="4kg-5b-dLI"/>
-                            <constraint firstItem="lZ1-eJ-5D4" firstAttribute="top" secondItem="InX-pw-mrg" secondAttribute="bottom" id="Aa4-nC-oAV"/>
-                            <constraint firstItem="InX-pw-mrg" firstAttribute="width" secondItem="Lkg-Kx-V79" secondAttribute="width" id="PEH-ee-FVI"/>
-                            <constraint firstItem="InX-pw-mrg" firstAttribute="centerX" secondItem="kA9-Jm-6mg" secondAttribute="centerX" id="TUo-ER-KtQ"/>
-                            <constraint firstItem="InX-pw-mrg" firstAttribute="top" secondItem="kA9-Jm-6mg" secondAttribute="top" constant="20" id="Zum-tE-qor"/>
+                            <constraint firstItem="B4C-OC-6Y9" firstAttribute="top" secondItem="wgu-yB-e2F" secondAttribute="bottom" constant="-36" id="7rQ-dG-BCO"/>
+                            <constraint firstItem="wgu-yB-e2F" firstAttribute="centerX" secondItem="B4C-OC-6Y9" secondAttribute="centerX" id="DAS-4z-C4X"/>
+                            <constraint firstItem="B4C-OC-6Y9" firstAttribute="top" secondItem="s7O-Zn-fnC" secondAttribute="bottom" constant="-36" id="RS7-8i-9lx"/>
                             <constraint firstItem="B4C-OC-6Y9" firstAttribute="centerX" secondItem="kA9-Jm-6mg" secondAttribute="centerX" id="cLR-ed-llA"/>
-                            <constraint firstItem="lZ1-eJ-5D4" firstAttribute="top" secondItem="Lkg-Kx-V79" secondAttribute="top" constant="217" id="rYJ-6D-Cbk"/>
+                            <constraint firstItem="s7O-Zn-fnC" firstAttribute="centerX" secondItem="kA9-Jm-6mg" secondAttribute="centerX" id="lsk-k2-1Y5"/>
                             <constraint firstItem="B4C-OC-6Y9" firstAttribute="bottom" secondItem="kA9-Jm-6mg" secondAttribute="bottom" constant="34" id="tgf-6y-6QG"/>
-                            <constraint firstItem="lZ1-eJ-5D4" firstAttribute="width" secondItem="Lkg-Kx-V79" secondAttribute="width" id="uLg-G0-8N4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="kA9-Jm-6mg"/>
                     </view>
-                    <connections>
-                        <outlet property="searchBar" destination="lZ1-eJ-5D4" id="AnK-f3-EkW"/>
-                        <outlet property="tableView" destination="fYx-Fx-WAi" id="FSK-k4-l0X"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pNt-sd-8wm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="477" y="-879"/>
+            <point key="canvasLocation" x="476.81159420289856" y="-879.24107142857144"/>
         </scene>
     </scenes>
     <resources>
         <image name="Screen Shot 2020-02-29 at 9.06.23 PM" width="966" height="156"/>
-        <image name="Screen Shot 2020-03-01 at 4.22.06 AM" width="300" height="106"/>
+        <image name="Screen Shot 2020-03-01 at 6.57.40 AM" width="450" height="906"/>
         <image name="endscreen" width="404" height="686"/>
         <image name="itinerary" width="398" height="512"/>
         <image name="planstatus" width="422" height="434"/>
@@ -613,4 +613,7 @@
         <image name="ubereats" width="450" height="1468"/>
         <image name="uberpicnic" width="1272" height="948"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="lX4-Zp-bhV"/>
+    </inferredMetricsTieBreakers>
 </document>
