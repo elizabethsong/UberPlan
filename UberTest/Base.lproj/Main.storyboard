@@ -32,6 +32,10 @@
                                     <constraint firstAttribute="height" constant="83" id="ckr-am-dbw"/>
                                 </constraints>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="uberpicnic" translatesAutoresizingMaskIntoConstraints="NO" id="Waq-Md-Iez">
+                                <rect key="frame" x="-19" y="-19" width="452" height="254"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -159,13 +163,13 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="1050"/>
                                 <subviews>
                                     <searchBar contentMode="redraw" ambiguous="YES" placeholder="Search all plans!" translatesAutoresizingMaskIntoConstraints="NO" id="OeC-vp-206">
-                                        <rect key="frame" x="0.0" y="70" width="414" height="56"/>
+                                        <rect key="frame" x="0.0" y="64" width="414" height="56"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </searchBar>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Screen Shot 2020-02-29 at 9.59.43 PM" translatesAutoresizingMaskIntoConstraints="NO" id="JWy-rb-Tky">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="seemore" translatesAutoresizingMaskIntoConstraints="NO" id="JWy-rb-Tky">
                                         <rect key="frame" x="0.0" y="64" width="414" height="1044"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1122" id="XCR-NK-0Z0"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1250" id="XCR-NK-0Z0"/>
                                         </constraints>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASN-bQ-Rct">
@@ -215,6 +219,7 @@
     </scenes>
     <resources>
         <image name="Screen Shot 2020-02-29 at 9.06.23 PM" width="966" height="156"/>
-        <image name="Screen Shot 2020-02-29 at 9.59.43 PM" width="360" height="984"/>
+        <image name="seemore" width="288" height="788"/>
+        <image name="uberpicnic" width="280" height="204"/>
     </resources>
 </document>
