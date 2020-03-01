@@ -20,49 +20,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" rotateEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bGY-yo-IJq">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bGY-yo-IJq">
                                 <rect key="frame" x="0.0" y="425" width="414" height="296"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRH-7U-1ME">
-                                <rect key="frame" x="0.0" y="710" width="414" height="11"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <state key="normal" title="Select Location"/>
-                                <connections>
-                                    <segue destination="bVq-e8-PhG" kind="presentation" identifier="goToFood" modalPresentationStyle="fullScreen" id="TDw-dZ-mQy"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2020-02-29 at 9.06.23 PM" translatesAutoresizingMaskIntoConstraints="NO" id="4ft-YK-dLj">
                                 <rect key="frame" x="0.0" y="759" width="414" height="83"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="83" id="ckr-am-dbw"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="uberpicnic" translatesAutoresizingMaskIntoConstraints="NO" id="Waq-Md-Iez">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="uberpicnic" translatesAutoresizingMaskIntoConstraints="NO" id="Waq-Md-Iez">
                                 <rect key="frame" x="-29" y="25" width="467" height="323"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Part 1 - Destination" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJr-an-oxE">
-                                <rect key="frame" x="85" y="374" width="216" height="25"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="22"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Part 1 - Destination" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJr-an-oxE">
+                                <rect key="frame" x="72" y="370" width="265" height="31"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRH-7U-1ME">
+                                <rect key="frame" x="0.0" y="716" width="414" height="35"/>
+                                <color key="backgroundColor" red="0.16172916765359061" green="0.38302336388499625" blue="0.79182427936267352" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
+                                <state key="normal" title="Select Location">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                    <color key="titleShadowColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="bVq-e8-PhG" kind="show" identifier="goToFood" id="TDw-dZ-mQy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="bGY-yo-IJq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="83" id="0gg-uy-Mc9"/>
-                            <constraint firstItem="zRH-7U-1ME" firstAttribute="top" secondItem="bGY-yo-IJq" secondAttribute="bottom" constant="23" id="1xH-3f-dwS"/>
+                            <constraint firstItem="bGY-yo-IJq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="152" id="0gg-uy-Mc9"/>
+                            <constraint firstItem="zRH-7U-1ME" firstAttribute="top" secondItem="bGY-yo-IJq" secondAttribute="bottom" constant="-5" id="1xH-3f-dwS"/>
                             <constraint firstAttribute="bottomMargin" secondItem="4ft-YK-dLj" secondAttribute="bottom" constant="-34" id="2js-Bz-qJ0"/>
                             <constraint firstItem="zRH-7U-1ME" firstAttribute="leading" secondItem="bGY-yo-IJq" secondAttribute="leading" id="3AY-ir-TB6"/>
                             <constraint firstItem="Waq-Md-Iez" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="6gs-Un-XTo"/>
                             <constraint firstItem="4ft-YK-dLj" firstAttribute="leading" secondItem="zRH-7U-1ME" secondAttribute="leading" id="CN3-5e-glN"/>
+                            <constraint firstItem="uJr-an-oxE" firstAttribute="top" secondItem="Waq-Md-Iez" secondAttribute="bottom" constant="22.000000000000227" id="Ce8-au-co0"/>
+                            <constraint firstItem="uJr-an-oxE" firstAttribute="centerX" secondItem="Waq-Md-Iez" secondAttribute="centerX" id="FZC-lM-Dat"/>
                             <constraint firstItem="Waq-Md-Iez" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-49" id="IsS-yd-lok"/>
                             <constraint firstItem="4ft-YK-dLj" firstAttribute="trailing" secondItem="zRH-7U-1ME" secondAttribute="trailing" id="NOi-IC-i4F"/>
+                            <constraint firstItem="bGY-yo-IJq" firstAttribute="top" secondItem="uJr-an-oxE" secondAttribute="bottom" constant="24" id="XEf-9Y-9sx"/>
                             <constraint firstItem="Waq-Md-Iez" firstAttribute="centerX" secondItem="bGY-yo-IJq" secondAttribute="centerX" id="ZIv-ay-cd2"/>
-                            <constraint firstItem="bGY-yo-IJq" firstAttribute="top" secondItem="Waq-Md-Iez" secondAttribute="bottom" constant="8" id="Zcd-qb-puS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zRH-7U-1ME" secondAttribute="bottom" constant="172" id="dE0-Dz-xBq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zRH-7U-1ME" secondAttribute="bottom" constant="57" id="dE0-Dz-xBq"/>
                             <constraint firstItem="bGY-yo-IJq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gLC-7Q-904"/>
-                            <constraint firstItem="bGY-yo-IJq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="356" id="jEA-2F-4Cn"/>
+                            <constraint firstItem="bGY-yo-IJq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="425" id="jEA-2F-4Cn"/>
                             <constraint firstItem="bGY-yo-IJq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mfe-ke-Cpj"/>
                             <constraint firstItem="zRH-7U-1ME" firstAttribute="trailing" secondItem="bGY-yo-IJq" secondAttribute="trailing" id="zzX-lR-DC9"/>
                         </constraints>
@@ -82,14 +87,14 @@
             <objects>
                 <viewController id="bVq-e8-PhG" customClass="SelectFoodViewController" customModule="UberTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RSv-6y-dfS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BvI-9k-ZtH">
-                                <rect key="frame" x="0.0" y="269" width="414" height="358"/>
+                                <rect key="frame" x="0.0" y="225" width="414" height="392"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2G-jz-elh">
-                                <rect key="frame" x="0.0" y="648" width="414" height="57"/>
+                                <rect key="frame" x="0.0" y="638" width="414" height="13"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Select Location"/>
                                 <connections>

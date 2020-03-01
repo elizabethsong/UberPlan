@@ -35,6 +35,9 @@
 		C9F7D25B240B411000252AC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F7D25A240B411000252AC9 /* UIKit.framework */; };
 		C9F7D25F240B583300252AC9 /* SelectFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F7D25E240B583300252AC9 /* SelectFoodViewController.swift */; };
 		C9F7D261240B682B00252AC9 /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F7D260240B682B00252AC9 /* PlanViewController.swift */; };
+		C9F7D26F240BB03400252AC9 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9F7D269240BA5E900252AC9 /* Comfortaa-Bold.ttf */; };
+		C9F7D270240BB03700252AC9 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9F7D26B240BA5E900252AC9 /* Comfortaa-Light.ttf */; };
+		C9F7D271240BB03900252AC9 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9F7D26A240BA5E900252AC9 /* Comfortaa-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -233,7 +236,10 @@
 			files = (
 				C9F7D226240B3F3500252AC9 /* LaunchScreen.storyboard in Resources */,
 				C9F7D223240B3F3500252AC9 /* Assets.xcassets in Resources */,
+				C9F7D26F240BB03400252AC9 /* Comfortaa-Bold.ttf in Resources */,
+				C9F7D271240BB03900252AC9 /* Comfortaa-Regular.ttf in Resources */,
 				C9F7D21E240B3F3400252AC9 /* Main.storyboard in Resources */,
+				C9F7D270240BB03700252AC9 /* Comfortaa-Light.ttf in Resources */,
 				C9F7D23C240B406B00252AC9 /* GoogleMaps.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
