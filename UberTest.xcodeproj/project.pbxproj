@@ -34,6 +34,7 @@
 		C9F7D259240B410700252AC9 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F7D24B240B410700252AC9 /* OpenGLES.framework */; };
 		C9F7D25B240B411000252AC9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9F7D25A240B411000252AC9 /* UIKit.framework */; };
 		C9F7D25F240B583300252AC9 /* SelectFoodViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F7D25E240B583300252AC9 /* SelectFoodViewController.swift */; };
+		C9F7D261240B682B00252AC9 /* PlanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F7D260240B682B00252AC9 /* PlanViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,7 @@
 		C9F7D24B240B410700252AC9 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		C9F7D25A240B411000252AC9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C9F7D25E240B583300252AC9 /* SelectFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFoodViewController.swift; sourceTree = "<group>"; };
+		C9F7D260240B682B00252AC9 /* PlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +132,7 @@
 				C9F7D227240B3F3500252AC9 /* Info.plist */,
 				C9F7D21F240B3F3400252AC9 /* UberTest.xcdatamodeld */,
 				C9F7D25E240B583300252AC9 /* SelectFoodViewController.swift */,
+				C9F7D260240B682B00252AC9 /* PlanViewController.swift */,
 			);
 			path = UberTest;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				C9F7D25F240B583300252AC9 /* SelectFoodViewController.swift in Sources */,
 				C9F7D219240B3F3400252AC9 /* SceneDelegate.swift in Sources */,
 				C9F7D221240B3F3400252AC9 /* UberTest.xcdatamodeld in Sources */,
+				C9F7D261240B682B00252AC9 /* PlanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
