@@ -25,6 +25,12 @@ class GoHomeViewController: UIViewController, MKMapViewDelegate {
         let region = MKCoordinateRegion(center: annotation.coordinate, latitudinalMeters: 500, longitudinalMeters: 500)
         
         home.setRegion(region, animated: true)
+        
+        let apartment = MKPointAnnotation()
+        //37.872400, -122.267900
+        apartment.coordinate = CLLocationCoordinate2D(latitude: 37.872400, longitude: -122.267900)
+        home.addAnnotation(apartment)
+        apartment.title = "My Home"
         populateNearByPlaces()
 
         // Do any additional setup after loading the view.
