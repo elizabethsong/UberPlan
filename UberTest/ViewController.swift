@@ -32,7 +32,7 @@ class ViewController: UIViewController, MKMapViewDelegate {
         
         annotation.title = "Current Location"
         
-        let region = MKCoordinateRegion(center: annotation.coordinate, latitudinalMeters: 1000, longitudinalMeters: 1000)
+        let region = MKCoordinateRegion(center: annotation.coordinate, latitudinalMeters: 3500, longitudinalMeters: 3500)
         
         map.setRegion(region, animated: true)
         populateNearByPlaces()
