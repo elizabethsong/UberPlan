@@ -195,10 +195,10 @@
             </objects>
             <point key="canvasLocation" x="1947.826086956522" y="39.508928571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Go Home View Controller-->
         <scene sceneID="hXT-JX-Fsg">
             <objects>
-                <viewController id="uGw-BI-o8p" sceneMemberID="viewController">
+                <viewController id="uGw-BI-o8p" customClass="GoHomeViewController" customModule="UberTest" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cRx-R0-rTR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -226,6 +226,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UYB-NX-jAy"/>
                     </view>
+                    <connections>
+                        <outlet property="home" destination="BOk-kd-wpy" id="4r8-8C-H9J"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6k1-je-M8e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

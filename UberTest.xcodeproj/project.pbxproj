@@ -38,6 +38,7 @@
 		C9F7D26F240BB03400252AC9 /* Comfortaa-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9F7D269240BA5E900252AC9 /* Comfortaa-Bold.ttf */; };
 		C9F7D270240BB03700252AC9 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9F7D26B240BA5E900252AC9 /* Comfortaa-Light.ttf */; };
 		C9F7D271240BB03900252AC9 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9F7D26A240BA5E900252AC9 /* Comfortaa-Regular.ttf */; };
+		C9F7D273240BC89C00252AC9 /* GoHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F7D272240BC89C00252AC9 /* GoHomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -74,6 +75,7 @@
 		C9F7D269240BA5E900252AC9 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Comfortaa-Bold.ttf"; path = "../../../../Downloads/comfortaa (1)/Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
 		C9F7D26A240BA5E900252AC9 /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Comfortaa-Regular.ttf"; path = "../../../../Downloads/comfortaa (1)/Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
 		C9F7D26B240BA5E900252AC9 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Comfortaa-Light.ttf"; path = "../../../../Downloads/comfortaa (1)/Comfortaa-Light.ttf"; sourceTree = "<group>"; };
+		C9F7D272240BC89C00252AC9 /* GoHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoHomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 				C9F7D21F240B3F3400252AC9 /* UberTest.xcdatamodeld */,
 				C9F7D25E240B583300252AC9 /* SelectFoodViewController.swift */,
 				C9F7D260240B682B00252AC9 /* PlanViewController.swift */,
+				C9F7D272240BC89C00252AC9 /* GoHomeViewController.swift */,
 			);
 			path = UberTest;
 			sourceTree = "<group>";
@@ -253,6 +256,7 @@
 			files = (
 				C9F7D21B240B3F3400252AC9 /* ViewController.swift in Sources */,
 				C9F7D217240B3F3400252AC9 /* AppDelegate.swift in Sources */,
+				C9F7D273240BC89C00252AC9 /* GoHomeViewController.swift in Sources */,
 				C9F7D25F240B583300252AC9 /* SelectFoodViewController.swift in Sources */,
 				C9F7D219240B3F3400252AC9 /* SceneDelegate.swift in Sources */,
 				C9F7D221240B3F3400252AC9 /* UberTest.xcdatamodeld in Sources */,

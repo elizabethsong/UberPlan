@@ -1,3 +1,5 @@
+
+  
 //
 //  ViewController.swift
 //  UberTest
@@ -5,7 +7,6 @@
 //  Created by Elizabeth Song on 2/29/20.
 //  Copyright © 2020 Elizabeth. All rights reserved.
 //
-
 import UIKit
 import MapKit
 import CoreLocation
@@ -97,6 +98,4 @@ class ViewController: UIViewController, MKMapViewDelegate {
     @IBOutlet weak var confirmButton: UIButton!
     
 }
-
-
 
