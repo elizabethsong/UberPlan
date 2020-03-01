@@ -13,6 +13,10 @@ class TableTableViewController: UITableViewController, UISearchBarDelegate {
     "2587788398",
     "5107784433",
     "3478749988"]
+//    var phoneDict = [
+//    “2587788398": “Elizabeth Song”,
+//    “5107784433": “Naomi Nunis”,
+//    “3478749988": “Mariam Germanyan”]
     var filteredData = [String]()
     var isSearching = false
     @IBOutlet weak var searchBar: UISearchBar!
@@ -36,6 +40,7 @@ class TableTableViewController: UITableViewController, UISearchBarDelegate {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
+        //return 1
         return 0
     }
 
@@ -73,6 +78,7 @@ class TableTableViewController: UITableViewController, UISearchBarDelegate {
             view.endEditing(true)
             tableView.reloadData()
         }else{
+            print("You are typing")
             isSearching = true
             filteredData = data.filter({$0 == searchBar.text})
             tableView.reloadData()

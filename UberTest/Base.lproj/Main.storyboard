@@ -454,7 +454,7 @@
                                         </constraints>
                                         <state key="normal" title=" "/>
                                         <connections>
-                                            <segue destination="wS1-vk-Mo7" kind="presentation" id="dTA-sz-3fV"/>
+                                            <segue destination="wS1-vk-Mo7" kind="presentation" id="hB2-p1-h19"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -504,30 +504,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <searchBar key="tableFooterView" contentMode="redraw" id="8dv-fG-qwl">
-                            <rect key="frame" x="0.0" y="100" width="414" height="44"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="8dv-fG-qwl">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <textInputTraits key="textInputTraits"/>
                         </searchBar>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="DataCell" id="V5m-19-Nko" customClass="DataCell" customModule="UberTest" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="72" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="V5m-19-Nko" id="uRs-dK-PkV" customClass="TableViewCell" customModule="UberTest">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzo-PA-Aow">
-                                            <rect key="frame" x="0.0" y="11" width="414" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gzo-PA-Aow">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="44" id="dMl-I0-3rU"/>
+                                            </constraints>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="gzo-PA-Aow" firstAttribute="height" secondItem="uRs-dK-PkV" secondAttribute="height" multiplier="0.482759" id="INO-xB-Ne3"/>
-                                        <constraint firstItem="gzo-PA-Aow" firstAttribute="width" secondItem="uRs-dK-PkV" secondAttribute="width" id="VQH-iE-M87"/>
-                                        <constraint firstItem="gzo-PA-Aow" firstAttribute="centerX" secondItem="uRs-dK-PkV" secondAttribute="centerX" id="cs7-bF-Ecb"/>
+                                        <constraint firstItem="gzo-PA-Aow" firstAttribute="centerX" secondItem="uRs-dK-PkV" secondAttribute="centerX" id="khm-Fl-ZYw"/>
+                                        <constraint firstItem="gzo-PA-Aow" firstAttribute="width" secondItem="uRs-dK-PkV" secondAttribute="width" id="xsN-a6-cBe"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
@@ -591,7 +593,7 @@
                         <viewLayoutGuide key="safeArea" id="kA9-Jm-6mg"/>
                     </view>
                     <connections>
-                        <outlet property="searchBar" destination="lZ1-eJ-5D4" id="7mB-6b-m6M"/>
+                        <outlet property="searchBar" destination="lZ1-eJ-5D4" id="AnK-f3-EkW"/>
                         <outlet property="tableView" destination="fYx-Fx-WAi" id="FSK-k4-l0X"/>
                     </connections>
                 </viewController>
