@@ -75,23 +75,25 @@ class ViewController: UIViewController, MKMapViewDelegate {
         confirmButton.setTitle("Confirm: \(parkplace!)", for: .normal)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "goToFood"{
-            let selectFoodVC = segue.destination as? SelectFoodViewController
-            if let parkplace = parkplace {
-                selectFoodVC?.parkplace = parkplace
-            }
-            else{
-                let alertController = UIAlertController(title: "error", message:
-                "No location selected!", preferredStyle: .alert)
-                
-                alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
-
-                self.present(alertController, animated: true, completion: nil)
-            }
-        }
-    }
     
+    //if select another food
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        if segue.identifier == "goToFood"{
+//            let selectFoodVC = segue.destination as? SelectFoodViewController
+//            if let parkplace = parkplace {
+//                selectFoodVC?.parkplace = parkplace
+//            }
+//            else{
+//                let alertController = UIAlertController(title: "error", message:
+//                "No location selected!", preferredStyle: .alert)
+//
+//                alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+//
+//                self.present(alertController, animated: true, completion: nil)
+//            }
+//        }
+//    }
+//
     @IBOutlet weak var confirmButton: UIButton!
     
 }
