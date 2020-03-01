@@ -216,13 +216,40 @@
                                     <constraint firstAttribute="height" constant="235" id="uVd-3a-hJ9"/>
                                 </constraints>
                             </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zaK-gQ-R9i">
+                                <rect key="frame" x="38.5" y="783" width="337" height="43"/>
+                                <color key="backgroundColor" red="0.16172916770000001" green="0.38302336390000002" blue="0.7918242794" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="5S6-tl-ezR"/>
+                                    <constraint firstAttribute="width" constant="337" id="i6a-qy-WO9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="27"/>
+                                <state key="normal" title="Take Me Home">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="glg-sp-7CZ" kind="presentation" modalPresentationStyle="fullScreen" id="4A8-YW-RPg"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Or different location..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="az6-qk-5pQ">
+                                <rect key="frame" x="145" y="837" width="249" height="17"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="BOk-kd-wpy" firstAttribute="top" secondItem="pDK-au-slB" secondAttribute="bottom" constant="30" id="Biq-LA-kaj"/>
                             <constraint firstItem="pDK-au-slB" firstAttribute="width" secondItem="cRx-R0-rTR" secondAttribute="width" multiplier="1.01932" id="CJe-e6-AgI"/>
+                            <constraint firstItem="UYB-NX-jAy" firstAttribute="bottom" secondItem="zaK-gQ-R9i" secondAttribute="bottom" constant="36" id="JJw-te-37d"/>
                             <constraint firstItem="pDK-au-slB" firstAttribute="top" secondItem="UYB-NX-jAy" secondAttribute="top" constant="20" id="Pw7-aE-Agm"/>
+                            <constraint firstItem="az6-qk-5pQ" firstAttribute="top" secondItem="zaK-gQ-R9i" secondAttribute="bottom" constant="11" id="R9J-GN-JCd"/>
                             <constraint firstItem="pDK-au-slB" firstAttribute="centerX" secondItem="UYB-NX-jAy" secondAttribute="centerX" id="UEd-5c-2Xp"/>
+                            <constraint firstItem="az6-qk-5pQ" firstAttribute="trailing" secondItem="cRx-R0-rTR" secondAttribute="trailingMargin" id="VOz-bM-cRX"/>
+                            <constraint firstItem="zaK-gQ-R9i" firstAttribute="centerX" secondItem="UYB-NX-jAy" secondAttribute="centerX" id="Vx1-8g-cZp"/>
+                            <constraint firstItem="zaK-gQ-R9i" firstAttribute="top" secondItem="BOk-kd-wpy" secondAttribute="bottom" constant="54" id="mxl-Dw-i3B"/>
+                            <constraint firstItem="az6-qk-5pQ" firstAttribute="leading" secondItem="UYB-NX-jAy" secondAttribute="leading" constant="145" id="pad-f7-e2b"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="UYB-NX-jAy"/>
                     </view>
@@ -233,6 +260,64 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6k1-je-M8e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2744.9275362318845" y="6.6964285714285712"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="urK-x4-bbo">
+            <objects>
+                <viewController id="glg-sp-7CZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="d1X-Kr-0ER">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="receipt" translatesAutoresizingMaskIntoConstraints="NO" id="5vW-dd-tHK">
+                                <rect key="frame" x="0.0" y="44" width="414" height="835"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="835" id="5aJ-Ga-dY6"/>
+                                    <constraint firstAttribute="width" constant="414" id="xmn-zq-l8v"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jof-UP-iTP">
+                                <rect key="frame" x="20" y="798" width="374" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="E17-be-PIY"/>
+                                    <constraint firstAttribute="width" constant="374" id="wwg-FG-BBJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="Am3-ot-VWR" kind="presentation" id="hx0-II-dPf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="5vW-dd-tHK" firstAttribute="trailing" secondItem="6Xx-Ki-Yy7" secondAttribute="trailing" id="CU6-gE-Lkc"/>
+                            <constraint firstAttribute="bottom" secondItem="5vW-dd-tHK" secondAttribute="bottom" constant="20" symbolic="YES" id="Mf1-o9-SbC"/>
+                            <constraint firstItem="5vW-dd-tHK" firstAttribute="leading" secondItem="6Xx-Ki-Yy7" secondAttribute="leading" id="Vzq-Cr-QcO"/>
+                            <constraint firstItem="Jof-UP-iTP" firstAttribute="centerX" secondItem="6Xx-Ki-Yy7" secondAttribute="centerX" id="lmS-98-Kmd"/>
+                            <constraint firstItem="5vW-dd-tHK" firstAttribute="top" secondItem="6Xx-Ki-Yy7" secondAttribute="top" id="vfX-ok-mZB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Xx-Ki-Yy7"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LZw-XO-Igq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3668.115942028986" y="-4.0178571428571423"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="IAN-nw-v5a">
+            <objects>
+                <viewController id="Am3-ot-VWR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KQP-YR-iW5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="8JS-R0-o8a"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cem-rV-hTy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4313" y="-4"/>
         </scene>
         <!--Select Food View Controller-->
         <scene sceneID="hhA-IF-aTI">
@@ -335,7 +420,7 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="1050"/>
                                 <subviews>
                                     <searchBar contentMode="redraw" ambiguous="YES" placeholder="Search all plans!" translatesAutoresizingMaskIntoConstraints="NO" id="OeC-vp-206">
-                                        <rect key="frame" x="0.0" y="64" width="414" height="56"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </searchBar>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ASN-bQ-Rct">
@@ -421,6 +506,7 @@
         <image name="Screen Shot 2020-02-29 at 9.06.23 PM" width="966" height="156"/>
         <image name="itinerary" width="398" height="512"/>
         <image name="planstatus" width="422" height="434"/>
+        <image name="receipt" width="448" height="918"/>
         <image name="seemore" width="288" height="788"/>
         <image name="ubereats" width="450" height="1468"/>
         <image name="uberpicnic" width="1272" height="948"/>
