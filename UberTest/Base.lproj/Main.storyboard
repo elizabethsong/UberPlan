@@ -159,9 +159,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="itinerary" translatesAutoresizingMaskIntoConstraints="NO" id="k9L-LF-oPW">
-                                <rect key="frame" x="10" y="45" width="394" height="476"/>
+                                <rect key="frame" x="10" y="20" width="394" height="400"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="476" id="o4r-Di-ehb"/>
+                                    <constraint firstAttribute="height" constant="400" id="o4r-Di-ehb"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRl-UM-BnN">
@@ -175,6 +175,9 @@
                                 <state key="normal" title="Confirm">
                                     <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 </state>
+                                <connections>
+                                    <segue destination="uGw-BI-o8p" kind="presentation" modalPresentationStyle="fullScreen" id="WO5-7t-yy0"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -183,7 +186,7 @@
                             <constraint firstItem="k9L-LF-oPW" firstAttribute="width" secondItem="Jeb-dF-pCY" secondAttribute="width" multiplier="0.951691" id="MxI-j0-gJU"/>
                             <constraint firstItem="FRl-UM-BnN" firstAttribute="centerX" secondItem="1h8-lL-w9w" secondAttribute="centerX" id="nO3-EO-o9y"/>
                             <constraint firstItem="1h8-lL-w9w" firstAttribute="bottom" secondItem="FRl-UM-BnN" secondAttribute="bottom" constant="44" id="wd8-WL-2X9"/>
-                            <constraint firstItem="k9L-LF-oPW" firstAttribute="top" secondItem="1h8-lL-w9w" secondAttribute="top" constant="45" id="wlM-Yu-k8Y"/>
+                            <constraint firstItem="k9L-LF-oPW" firstAttribute="top" secondItem="1h8-lL-w9w" secondAttribute="top" constant="20" id="wlM-Yu-k8Y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1h8-lL-w9w"/>
                     </view>
@@ -191,6 +194,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="99z-Zr-nHI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1947.826086956522" y="39.508928571428569"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hXT-JX-Fsg">
+            <objects>
+                <viewController id="uGw-BI-o8p" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cRx-R0-rTR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="planstatus" translatesAutoresizingMaskIntoConstraints="NO" id="pDK-au-slB">
+                                <rect key="frame" x="-4" y="64" width="422" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="ifb-ha-zEg"/>
+                                </constraints>
+                            </imageView>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="BOk-kd-wpy">
+                                <rect key="frame" x="-2" y="494" width="418" height="235"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="418" id="ROh-5I-81R"/>
+                                    <constraint firstAttribute="height" constant="235" id="uVd-3a-hJ9"/>
+                                </constraints>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BOk-kd-wpy" firstAttribute="top" secondItem="pDK-au-slB" secondAttribute="bottom" constant="30" id="Biq-LA-kaj"/>
+                            <constraint firstItem="pDK-au-slB" firstAttribute="width" secondItem="cRx-R0-rTR" secondAttribute="width" multiplier="1.01932" id="CJe-e6-AgI"/>
+                            <constraint firstItem="pDK-au-slB" firstAttribute="top" secondItem="UYB-NX-jAy" secondAttribute="top" constant="20" id="Pw7-aE-Agm"/>
+                            <constraint firstItem="pDK-au-slB" firstAttribute="centerX" secondItem="UYB-NX-jAy" secondAttribute="centerX" id="UEd-5c-2Xp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="UYB-NX-jAy"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6k1-je-M8e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2744.9275362318845" y="6.6964285714285712"/>
         </scene>
         <!--Select Food View Controller-->
         <scene sceneID="hhA-IF-aTI">
@@ -309,9 +348,22 @@
                                             <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1100" id="XCR-NK-0Z0"/>
                                         </constraints>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iqg-yE-iXa">
+                                        <rect key="frame" x="315" y="92" width="91" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="91" id="eOo-91-LhF"/>
+                                            <constraint firstAttribute="height" constant="90" id="uno-Ld-geH"/>
+                                        </constraints>
+                                        <state key="normal" title=" "/>
+                                        <connections>
+                                            <segue destination="u6S-qL-A1C" kind="presentation" id="T2v-3a-PQQ"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="JWy-rb-Tky" firstAttribute="top" secondItem="nl3-8d-57H" secondAttribute="top" constant="64" id="4Fj-s8-BUz"/>
+                                    <constraint firstItem="iqg-yE-iXa" firstAttribute="leading" secondItem="JWy-rb-Tky" secondAttribute="trailing" constant="-89" id="EGF-0m-dVo"/>
+                                    <constraint firstItem="JWy-rb-Tky" firstAttribute="top" secondItem="iqg-yE-iXa" secondAttribute="bottom" constant="-101" id="L38-8e-UBQ"/>
                                     <constraint firstAttribute="bottom" secondItem="JWy-rb-Tky" secondAttribute="bottom" constant="-49.999999999999773" id="LVa-JK-TLm"/>
                                     <constraint firstItem="JWy-rb-Tky" firstAttribute="trailing" secondItem="iHC-3a-xmc" secondAttribute="trailing" id="kNi-HB-iBg"/>
                                     <constraint firstItem="JWy-rb-Tky" firstAttribute="leading" secondItem="iHC-3a-xmc" secondAttribute="leading" id="kQS-LE-7CK"/>
@@ -346,10 +398,26 @@
             </objects>
             <point key="canvasLocation" x="-776.81159420289862" y="128.57142857142856"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="fdN-ET-7hp">
+            <objects>
+                <viewController id="u6S-qL-A1C" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lkg-Kx-V79">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="kA9-Jm-6mg"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pNt-sd-8wm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-199" y="-862"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Screen Shot 2020-02-29 at 9.06.23 PM" width="966" height="156"/>
-        <image name="itinerary" width="668" height="838"/>
+        <image name="itinerary" width="398" height="512"/>
+        <image name="planstatus" width="422" height="434"/>
         <image name="seemore" width="288" height="788"/>
         <image name="ubereats" width="450" height="1468"/>
         <image name="uberpicnic" width="1272" height="948"/>
