@@ -68,6 +68,9 @@
 		C9F7D25A240B411000252AC9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C9F7D25E240B583300252AC9 /* SelectFoodViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectFoodViewController.swift; sourceTree = "<group>"; };
 		C9F7D260240B682B00252AC9 /* PlanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanViewController.swift; sourceTree = "<group>"; };
+		C9F7D269240BA5E900252AC9 /* Comfortaa-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Comfortaa-Bold.ttf"; path = "../../../../Downloads/comfortaa (1)/Comfortaa-Bold.ttf"; sourceTree = "<group>"; };
+		C9F7D26A240BA5E900252AC9 /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Comfortaa-Regular.ttf"; path = "../../../../Downloads/comfortaa (1)/Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
+		C9F7D26B240BA5E900252AC9 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Comfortaa-Light.ttf"; path = "../../../../Downloads/comfortaa (1)/Comfortaa-Light.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,7 @@
 		C9F7D215240B3F3400252AC9 /* UberTest */ = {
 			isa = PBXGroup;
 			children = (
+				C9F7D266240BA50400252AC9 /* fonts */,
 				C9F7D23B240B406B00252AC9 /* GoogleMaps.bundle */,
 				C9F7D237240B404A00252AC9 /* GoogleMaps.framework */,
 				C9F7D235240B404A00252AC9 /* GoogleMapsBase.framework */,
@@ -157,6 +161,16 @@
 				C9F7D241240B410700252AC9 /* SystemConfiguration.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9F7D266240BA50400252AC9 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				C9F7D269240BA5E900252AC9 /* Comfortaa-Bold.ttf */,
+				C9F7D26B240BA5E900252AC9 /* Comfortaa-Light.ttf */,
+				C9F7D26A240BA5E900252AC9 /* Comfortaa-Regular.ttf */,
+			);
+			path = fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

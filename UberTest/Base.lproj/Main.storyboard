@@ -6,6 +6,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comfortaa-Regular.ttf">
+            <string>Comfortaa-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -16,10 +21,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" mapType="standard" rotateEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bGY-yo-IJq">
-                                <rect key="frame" x="0.0" y="321" width="414" height="296"/>
+                                <rect key="frame" x="0.0" y="425" width="414" height="296"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRH-7U-1ME">
-                                <rect key="frame" x="0.0" y="675" width="414" height="11"/>
+                                <rect key="frame" x="0.0" y="710" width="414" height="11"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Select Location"/>
                                 <connections>
@@ -32,22 +37,32 @@
                                     <constraint firstAttribute="height" constant="83" id="ckr-am-dbw"/>
                                 </constraints>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="uberpicnic" translatesAutoresizingMaskIntoConstraints="NO" id="Waq-Md-Iez">
-                                <rect key="frame" x="-7" y="25" width="428.99999999999989" height="288"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="uberpicnic" translatesAutoresizingMaskIntoConstraints="NO" id="Waq-Md-Iez">
+                                <rect key="frame" x="-29" y="25" width="467" height="323"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Part 1 - Destination" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJr-an-oxE">
+                                <rect key="frame" x="85" y="374" width="216" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="bGY-yo-IJq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0gg-uy-Mc9"/>
-                            <constraint firstItem="zRH-7U-1ME" firstAttribute="top" secondItem="bGY-yo-IJq" secondAttribute="bottom" constant="8" id="1xH-3f-dwS"/>
+                            <constraint firstItem="bGY-yo-IJq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="83" id="0gg-uy-Mc9"/>
+                            <constraint firstItem="zRH-7U-1ME" firstAttribute="top" secondItem="bGY-yo-IJq" secondAttribute="bottom" constant="23" id="1xH-3f-dwS"/>
                             <constraint firstAttribute="bottomMargin" secondItem="4ft-YK-dLj" secondAttribute="bottom" constant="-34" id="2js-Bz-qJ0"/>
                             <constraint firstItem="zRH-7U-1ME" firstAttribute="leading" secondItem="bGY-yo-IJq" secondAttribute="leading" id="3AY-ir-TB6"/>
+                            <constraint firstItem="Waq-Md-Iez" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="6gs-Un-XTo"/>
                             <constraint firstItem="4ft-YK-dLj" firstAttribute="leading" secondItem="zRH-7U-1ME" secondAttribute="leading" id="CN3-5e-glN"/>
+                            <constraint firstItem="Waq-Md-Iez" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-49" id="IsS-yd-lok"/>
                             <constraint firstItem="4ft-YK-dLj" firstAttribute="trailing" secondItem="zRH-7U-1ME" secondAttribute="trailing" id="NOi-IC-i4F"/>
+                            <constraint firstItem="Waq-Md-Iez" firstAttribute="centerX" secondItem="bGY-yo-IJq" secondAttribute="centerX" id="ZIv-ay-cd2"/>
+                            <constraint firstItem="bGY-yo-IJq" firstAttribute="top" secondItem="Waq-Md-Iez" secondAttribute="bottom" constant="8" id="Zcd-qb-puS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zRH-7U-1ME" secondAttribute="bottom" constant="172" id="dE0-Dz-xBq"/>
                             <constraint firstItem="bGY-yo-IJq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gLC-7Q-904"/>
-                            <constraint firstItem="bGY-yo-IJq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="225" id="jEA-2F-4Cn"/>
+                            <constraint firstItem="bGY-yo-IJq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="356" id="jEA-2F-4Cn"/>
                             <constraint firstItem="bGY-yo-IJq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mfe-ke-Cpj"/>
                             <constraint firstItem="zRH-7U-1ME" firstAttribute="trailing" secondItem="bGY-yo-IJq" secondAttribute="trailing" id="zzX-lR-DC9"/>
                         </constraints>
