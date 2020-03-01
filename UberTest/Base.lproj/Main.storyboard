@@ -316,10 +316,19 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="endscreen" translatesAutoresizingMaskIntoConstraints="NO" id="NOp-y0-gZy">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="661"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2020-03-01 at 4.01.54 AM" translatesAutoresizingMaskIntoConstraints="NO" id="blu-ij-cae">
+                                <rect key="frame" x="87" y="554" width="240" height="254"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="OBn-PE-jtB"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="8JS-R0-o8a" firstAttribute="bottom" secondItem="blu-ij-cae" secondAttribute="bottom" id="58k-R6-tHt"/>
+                            <constraint firstItem="8JS-R0-o8a" firstAttribute="trailing" secondItem="blu-ij-cae" secondAttribute="trailing" constant="87" id="QDw-Ra-kt6"/>
                             <constraint firstItem="NOp-y0-gZy" firstAttribute="top" secondItem="8JS-R0-o8a" secondAttribute="top" id="TS2-J0-568"/>
+                            <constraint firstItem="blu-ij-cae" firstAttribute="centerX" secondItem="8JS-R0-o8a" secondAttribute="centerX" id="dkW-P3-qAb"/>
                             <constraint firstItem="NOp-y0-gZy" firstAttribute="centerX" secondItem="8JS-R0-o8a" secondAttribute="centerX" id="gi8-MQ-brI"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8JS-R0-o8a"/>
@@ -604,6 +613,7 @@
     </scenes>
     <resources>
         <image name="Screen Shot 2020-02-29 at 9.06.23 PM" width="966" height="156"/>
+        <image name="Screen Shot 2020-03-01 at 4.01.54 AM" width="1056" height="254"/>
         <image name="Screen Shot 2020-03-01 at 6.57.40 AM" width="450" height="906"/>
         <image name="endscreen" width="404" height="686"/>
         <image name="itinerary" width="398" height="512"/>

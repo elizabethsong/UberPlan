@@ -43,6 +43,7 @@
 		C9F7D277240BDEB400252AC9 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F7D276240BDEB400252AC9 /* EndViewController.swift */; };
 		C9F7D27D240BE4D400252AC9 /* TableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F7D27C240BE4D400252AC9 /* TableTableViewController.swift */; };
 		C9F7D282240BF1A000252AC9 /* DataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F7D280240BF1A000252AC9 /* DataCell.swift */; };
+		C9F7D289240C07AE00252AC9 /* RatingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F7D288240C07AE00252AC9 /* RatingsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,7 @@
 		C9F7D276240BDEB400252AC9 /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
 		C9F7D27C240BE4D400252AC9 /* TableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableTableViewController.swift; sourceTree = "<group>"; };
 		C9F7D280240BF1A000252AC9 /* DataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCell.swift; sourceTree = "<group>"; };
+		C9F7D288240C07AE00252AC9 /* RatingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +157,7 @@
 				C9F7D276240BDEB400252AC9 /* EndViewController.swift */,
 				C9F7D27C240BE4D400252AC9 /* TableTableViewController.swift */,
 				C9F7D280240BF1A000252AC9 /* DataCell.swift */,
+				C9F7D288240C07AE00252AC9 /* RatingsController.swift */,
 			);
 			path = UberTest;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				C9F7D21B240B3F3400252AC9 /* ViewController.swift in Sources */,
 				C9F7D217240B3F3400252AC9 /* AppDelegate.swift in Sources */,
 				C9F7D273240BC89C00252AC9 /* GoHomeViewController.swift in Sources */,
+				C9F7D289240C07AE00252AC9 /* RatingsController.swift in Sources */,
 				C9F7D27D240BE4D400252AC9 /* TableTableViewController.swift in Sources */,
 				C9F7D275240BDD8E00252AC9 /* RatingView.swift in Sources */,
 				C9F7D282240BF1A000252AC9 /* DataCell.swift in Sources */,
