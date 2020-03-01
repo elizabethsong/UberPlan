@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UberTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" rotateEnabled="NO" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bGY-yo-IJq">
+                                <rect key="frame" x="0.0" y="269" width="414" height="358"/>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zRH-7U-1ME">
+                                <rect key="frame" x="0.0" y="635" width="414" height="55"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Select Location"/>
+                                <connections>
+                                    <segue destination="bVq-e8-PhG" kind="presentation" identifier="goToFood" modalPresentationStyle="fullScreen" id="TDw-dZ-mQy"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bGY-yo-IJq" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0gg-uy-Mc9"/>
+                            <constraint firstItem="zRH-7U-1ME" firstAttribute="top" secondItem="bGY-yo-IJq" secondAttribute="bottom" constant="8" id="1xH-3f-dwS"/>
+                            <constraint firstItem="zRH-7U-1ME" firstAttribute="leading" secondItem="bGY-yo-IJq" secondAttribute="leading" id="3AY-ir-TB6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zRH-7U-1ME" secondAttribute="bottom" constant="172" id="dE0-Dz-xBq"/>
+                            <constraint firstItem="bGY-yo-IJq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gLC-7Q-904"/>
+                            <constraint firstItem="bGY-yo-IJq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="225" id="jEA-2F-4Cn"/>
+                            <constraint firstItem="bGY-yo-IJq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="mfe-ke-Cpj"/>
+                            <constraint firstItem="zRH-7U-1ME" firstAttribute="trailing" secondItem="bGY-yo-IJq" secondAttribute="trailing" id="zzX-lR-DC9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="confirmButton" destination="zRH-7U-1ME" id="luw-8L-lpk"/>
+                        <outlet property="map" destination="bGY-yo-IJq" id="LVX-u1-DVf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="128.57142857142856"/>
+        </scene>
+        <!--Select Food View Controller-->
+        <scene sceneID="hhA-IF-aTI">
+            <objects>
+                <viewController id="bVq-e8-PhG" customClass="SelectFoodViewController" customModule="UberTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RSv-6y-dfS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="G1o-h5-tgt"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="IPc-7i-JbB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fzv-sr-fxw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1049" y="138"/>
+        </scene>
+    </scenes>
+</document>
