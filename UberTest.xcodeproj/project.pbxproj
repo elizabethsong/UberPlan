@@ -39,6 +39,8 @@
 		C9F7D270240BB03700252AC9 /* Comfortaa-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9F7D26B240BA5E900252AC9 /* Comfortaa-Light.ttf */; };
 		C9F7D271240BB03900252AC9 /* Comfortaa-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9F7D26A240BA5E900252AC9 /* Comfortaa-Regular.ttf */; };
 		C9F7D273240BC89C00252AC9 /* GoHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F7D272240BC89C00252AC9 /* GoHomeViewController.swift */; };
+		C9F7D275240BDD8E00252AC9 /* RatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F7D274240BDD8E00252AC9 /* RatingView.swift */; };
+		C9F7D277240BDEB400252AC9 /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9F7D276240BDEB400252AC9 /* EndViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +78,8 @@
 		C9F7D26A240BA5E900252AC9 /* Comfortaa-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Comfortaa-Regular.ttf"; path = "../../../../Downloads/comfortaa (1)/Comfortaa-Regular.ttf"; sourceTree = "<group>"; };
 		C9F7D26B240BA5E900252AC9 /* Comfortaa-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Comfortaa-Light.ttf"; path = "../../../../Downloads/comfortaa (1)/Comfortaa-Light.ttf"; sourceTree = "<group>"; };
 		C9F7D272240BC89C00252AC9 /* GoHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoHomeViewController.swift; sourceTree = "<group>"; };
+		C9F7D274240BDD8E00252AC9 /* RatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingView.swift; sourceTree = "<group>"; };
+		C9F7D276240BDEB400252AC9 /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +147,8 @@
 				C9F7D25E240B583300252AC9 /* SelectFoodViewController.swift */,
 				C9F7D260240B682B00252AC9 /* PlanViewController.swift */,
 				C9F7D272240BC89C00252AC9 /* GoHomeViewController.swift */,
+				C9F7D274240BDD8E00252AC9 /* RatingView.swift */,
+				C9F7D276240BDEB400252AC9 /* EndViewController.swift */,
 			);
 			path = UberTest;
 			sourceTree = "<group>";
@@ -254,9 +260,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9F7D277240BDEB400252AC9 /* EndViewController.swift in Sources */,
 				C9F7D21B240B3F3400252AC9 /* ViewController.swift in Sources */,
 				C9F7D217240B3F3400252AC9 /* AppDelegate.swift in Sources */,
 				C9F7D273240BC89C00252AC9 /* GoHomeViewController.swift in Sources */,
+				C9F7D275240BDD8E00252AC9 /* RatingView.swift in Sources */,
 				C9F7D25F240B583300252AC9 /* SelectFoodViewController.swift in Sources */,
 				C9F7D219240B3F3400252AC9 /* SceneDelegate.swift in Sources */,
 				C9F7D221240B3F3400252AC9 /* UberTest.xcdatamodeld in Sources */,

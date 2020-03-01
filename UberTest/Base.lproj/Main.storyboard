@@ -309,7 +309,7 @@
         <scene sceneID="IAN-nw-v5a">
             <objects>
                 <viewController id="Am3-ot-VWR" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="KQP-YR-iW5">
+                    <view key="view" contentMode="scaleToFill" id="KQP-YR-iW5" customClass="endvi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
