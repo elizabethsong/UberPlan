@@ -47,7 +47,7 @@
                                     <color key="titleShadowColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="TX6-OP-CHA" kind="presentation" modalPresentationStyle="fullScreen" id="9T3-IK-oHh"/>
+                                    <segue destination="TX6-OP-CHA" kind="presentation" identifier="goToFood" modalPresentationStyle="fullScreen" id="9T3-IK-oHh"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -276,14 +276,13 @@
                                     <constraint firstAttribute="width" constant="414" id="xmn-zq-l8v"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jof-UP-iTP">
-                                <rect key="frame" x="20" y="798" width="374" height="64"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jof-UP-iTP">
+                                <rect key="frame" x="20" y="798" width="374" height="81"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="64" id="E17-be-PIY"/>
                                     <constraint firstAttribute="width" constant="374" id="wwg-FG-BBJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="42"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title=" "/>
                                 <connections>
                                     <segue destination="Am3-ot-VWR" kind="presentation" id="hx0-II-dPf"/>
                                 </connections>
@@ -292,9 +291,11 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="5vW-dd-tHK" firstAttribute="trailing" secondItem="6Xx-Ki-Yy7" secondAttribute="trailing" id="CU6-gE-Lkc"/>
+                            <constraint firstItem="Jof-UP-iTP" firstAttribute="bottom" secondItem="5vW-dd-tHK" secondAttribute="bottom" id="LYV-t3-ozu"/>
                             <constraint firstAttribute="bottom" secondItem="5vW-dd-tHK" secondAttribute="bottom" constant="20" symbolic="YES" id="Mf1-o9-SbC"/>
                             <constraint firstItem="5vW-dd-tHK" firstAttribute="leading" secondItem="6Xx-Ki-Yy7" secondAttribute="leading" id="Vzq-Cr-QcO"/>
                             <constraint firstItem="Jof-UP-iTP" firstAttribute="centerX" secondItem="6Xx-Ki-Yy7" secondAttribute="centerX" id="lmS-98-Kmd"/>
+                            <constraint firstItem="Jof-UP-iTP" firstAttribute="top" secondItem="5vW-dd-tHK" secondAttribute="bottom" constant="-81" id="thw-zZ-fr6"/>
                             <constraint firstItem="5vW-dd-tHK" firstAttribute="top" secondItem="6Xx-Ki-Yy7" secondAttribute="top" id="vfX-ok-mZB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Xx-Ki-Yy7"/>
@@ -311,13 +312,22 @@
                     <view key="view" contentMode="scaleToFill" id="KQP-YR-iW5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="endscreen" translatesAutoresizingMaskIntoConstraints="NO" id="NOp-y0-gZy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="661"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="NOp-y0-gZy" firstAttribute="top" secondItem="8JS-R0-o8a" secondAttribute="top" id="TS2-J0-568"/>
+                            <constraint firstItem="NOp-y0-gZy" firstAttribute="centerX" secondItem="8JS-R0-o8a" secondAttribute="centerX" id="gi8-MQ-brI"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8JS-R0-o8a"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cem-rV-hTy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4313" y="-4"/>
+            <point key="canvasLocation" x="4311.594202898551" y="-4.0178571428571423"/>
         </scene>
         <!--Select Food View Controller-->
         <scene sceneID="hhA-IF-aTI">
@@ -504,6 +514,7 @@
     </scenes>
     <resources>
         <image name="Screen Shot 2020-02-29 at 9.06.23 PM" width="966" height="156"/>
+        <image name="endscreen" width="404" height="686"/>
         <image name="itinerary" width="398" height="512"/>
         <image name="planstatus" width="422" height="434"/>
         <image name="receipt" width="448" height="918"/>

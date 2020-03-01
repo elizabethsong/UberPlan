@@ -41,7 +41,21 @@ class ViewController: UIViewController, MKMapViewDelegate {
     }
 
     @IBOutlet weak var map: MKMapView!
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToFood"{
+            
+            if let parkplace = parkplace {
+            }
+            else{
+                let alertController = UIAlertController(title: "error", message:
+                "No location selected!", preferredStyle: .alert)
+
+                alertController.addAction(UIAlertAction(title: "Dismiss", style: .default))
+
+                self.present(alertController, animated: true, completion: nil)
+            }
+        }
+    }
     func populateNearByPlaces(){
         let request = MKLocalSearch.Request()
         
