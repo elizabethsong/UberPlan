@@ -99,14 +99,36 @@
                                             <constraint firstAttribute="height" constant="1300" id="9EK-KT-PYs"/>
                                         </constraints>
                                     </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2020-02-29 at 9.06.23 PM" translatesAutoresizingMaskIntoConstraints="NO" id="sCR-tx-DIo">
+                                        <rect key="frame" x="0.0" y="1189" width="414" height="57"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="414" id="Mtx-Q0-8Xv"/>
+                                            <constraint firstAttribute="height" constant="57" id="eqo-7I-Aao"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="laL-hd-NaK">
+                                        <rect key="frame" x="23" y="615" width="367" height="204"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="204" id="rKu-PC-6c9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                        <state key="normal" title=" "/>
+                                        <connections>
+                                            <segue destination="lwo-wE-RZs" kind="presentation" id="m64-2Z-e6U"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="NWX-cw-l3z" secondAttribute="trailing" id="Eke-rT-mtO"/>
+                                    <constraint firstItem="laL-hd-NaK" firstAttribute="top" secondItem="Tiq-QN-Ejo" secondAttribute="top" constant="615" id="Fbg-LY-ZX5"/>
                                     <constraint firstItem="NWX-cw-l3z" firstAttribute="leading" secondItem="Tiq-QN-Ejo" secondAttribute="leading" id="MoW-C3-dYQ"/>
                                     <constraint firstItem="NWX-cw-l3z" firstAttribute="top" secondItem="Tiq-QN-Ejo" secondAttribute="topMargin" id="NyM-hm-vHe"/>
+                                    <constraint firstAttribute="bottom" secondItem="laL-hd-NaK" secondAttribute="bottom" constant="427" id="XBe-ll-8Mo"/>
                                     <constraint firstItem="NWX-cw-l3z" firstAttribute="width" secondItem="Tiq-QN-Ejo" secondAttribute="width" id="XLz-Bn-rvD"/>
                                     <constraint firstAttribute="width" constant="414" id="dak-Fy-3Bd"/>
                                     <constraint firstAttribute="bottom" secondItem="NWX-cw-l3z" secondAttribute="bottom" constant="-86" id="fwL-5W-RqH"/>
+                                    <constraint firstItem="laL-hd-NaK" firstAttribute="width" secondItem="Tiq-QN-Ejo" secondAttribute="width" multiplier="0.886473" id="hmi-kS-0NA"/>
+                                    <constraint firstItem="sCR-tx-DIo" firstAttribute="centerX" secondItem="NWX-cw-l3z" secondAttribute="centerX" id="xLQ-vG-uwS"/>
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="7vl-ah-1DI"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="0hC-iJ-Nm1"/>
@@ -118,6 +140,7 @@
                             <constraint firstItem="Tiq-QN-Ejo" firstAttribute="leading" secondItem="Ede-Pd-JlO" secondAttribute="leading" id="Hbm-ar-XLP"/>
                             <constraint firstItem="Tiq-QN-Ejo" firstAttribute="top" secondItem="2Mh-WD-tyM" secondAttribute="top" constant="20" symbolic="YES" id="Uli-So-fgZ"/>
                             <constraint firstItem="Ede-Pd-JlO" firstAttribute="bottom" secondItem="Tiq-QN-Ejo" secondAttribute="bottom" id="dy9-UK-zAy"/>
+                            <constraint firstItem="Ede-Pd-JlO" firstAttribute="bottom" secondItem="sCR-tx-DIo" secondAttribute="bottom" id="gms-aX-MTp"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ede-Pd-JlO"/>
                     </view>
@@ -126,6 +149,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cYS-i3-Vax" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="985.50724637681162" y="57.589285714285708"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="x1W-U2-8Zz">
+            <objects>
+                <viewController id="lwo-wE-RZs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jeb-dF-pCY">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="itinerary" translatesAutoresizingMaskIntoConstraints="NO" id="k9L-LF-oPW">
+                                <rect key="frame" x="10" y="45" width="394" height="476"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="476" id="o4r-Di-ehb"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="k9L-LF-oPW" firstAttribute="centerX" secondItem="Jeb-dF-pCY" secondAttribute="centerX" id="51Y-mA-4ZO"/>
+                            <constraint firstItem="k9L-LF-oPW" firstAttribute="width" secondItem="Jeb-dF-pCY" secondAttribute="width" multiplier="0.951691" id="MxI-j0-gJU"/>
+                            <constraint firstItem="k9L-LF-oPW" firstAttribute="top" secondItem="1h8-lL-w9w" secondAttribute="top" constant="45" id="wlM-Yu-k8Y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1h8-lL-w9w"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="99z-Zr-nHI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1947.826086956522" y="39.508928571428569"/>
         </scene>
         <!--Select Food View Controller-->
         <scene sceneID="hhA-IF-aTI">
@@ -168,7 +219,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fzv-sr-fxw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="894" y="765"/>
+            <point key="canvasLocation" x="887" y="880"/>
         </scene>
         <!--Plan View Controller-->
         <scene sceneID="Mcg-nh-3MU">
@@ -284,8 +335,9 @@
     </scenes>
     <resources>
         <image name="Screen Shot 2020-02-29 at 9.06.23 PM" width="966" height="156"/>
+        <image name="itinerary" width="668" height="838"/>
         <image name="seemore" width="288" height="788"/>
-        <image name="ubereats" width="380" height="1422"/>
+        <image name="ubereats" width="450" height="1468"/>
         <image name="uberpicnic" width="1272" height="948"/>
     </resources>
 </document>
