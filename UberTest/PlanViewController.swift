@@ -12,10 +12,15 @@ class PlanViewController: UIViewController {
     var foodplace = ""
     var parkplace = ""
 
+    @IBOutlet weak var food: UILabel!
+    @IBOutlet weak var park: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print(foodplace)
         print(parkplace)
+        food.text = foodplace
+        park.text = parkplace
         // Do any additional setup after loading the view.
     }
     
