@@ -164,11 +164,25 @@
                                     <constraint firstAttribute="height" constant="476" id="o4r-Di-ehb"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRl-UM-BnN">
+                                <rect key="frame" x="37" y="719" width="337" height="45"/>
+                                <color key="backgroundColor" red="0.36973316787154803" green="0.71920301784505503" blue="0.37534656538279337" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="337" id="eZf-C6-g1t"/>
+                                    <constraint firstAttribute="height" constant="45" id="fNB-lF-c4D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="27"/>
+                                <state key="normal" title="Confirm">
+                                    <color key="titleColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="k9L-LF-oPW" firstAttribute="centerX" secondItem="Jeb-dF-pCY" secondAttribute="centerX" id="51Y-mA-4ZO"/>
                             <constraint firstItem="k9L-LF-oPW" firstAttribute="width" secondItem="Jeb-dF-pCY" secondAttribute="width" multiplier="0.951691" id="MxI-j0-gJU"/>
+                            <constraint firstItem="FRl-UM-BnN" firstAttribute="centerX" secondItem="1h8-lL-w9w" secondAttribute="centerX" id="nO3-EO-o9y"/>
+                            <constraint firstItem="1h8-lL-w9w" firstAttribute="bottom" secondItem="FRl-UM-BnN" secondAttribute="bottom" constant="44" id="wd8-WL-2X9"/>
                             <constraint firstItem="k9L-LF-oPW" firstAttribute="top" secondItem="1h8-lL-w9w" secondAttribute="top" constant="45" id="wlM-Yu-k8Y"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1h8-lL-w9w"/>
