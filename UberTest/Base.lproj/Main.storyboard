@@ -176,7 +176,7 @@
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="seemore" translatesAutoresizingMaskIntoConstraints="NO" id="JWy-rb-Tky">
                                         <rect key="frame" x="0.0" y="56" width="414" height="1044"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1075" id="XCR-NK-0Z0"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="1100" id="XCR-NK-0Z0"/>
                                         </constraints>
                                     </imageView>
                                 </subviews>
